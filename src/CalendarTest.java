@@ -45,7 +45,7 @@ public class CalendarTest {
 
 	@Test
 	public void testab() throws InterruptedException {
-		String email = "bojanpopovred@gmail.com";
+		String email = "yourEmail@gmail.com";
 		String string = c.enterEmailAddress(email);
 		String[] return_password_string_split = string.split("\n");
 		assertTrue((return_password_string_split[0] + " " + return_password_string_split[1]).equals("Welcome "+email));
@@ -53,7 +53,7 @@ public class CalendarTest {
 	
 	@Test
 	public void testac() throws InterruptedException {
-		assertTrue(c.enterPassword("bojan281996").isEnabled());
+		assertTrue(c.enterPassword("password_here").isEnabled());
 	}
 	
 	@Test
