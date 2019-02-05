@@ -5,16 +5,6 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
-/*import org.junit.jupiter.api.Disabled;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.mockito.InjectMocks;
-import org.mockito.MockitoAnnotations;*/
 import org.mockito.Mock;
 import org.mockito.Mockito;
 
@@ -207,7 +197,6 @@ public class CalendarTest {
 		c.previousButton();
 		c.editEvent("Test Event");
 		c.changeDateAndTime("15 Feb 2019", "1:55pm", "1:15am");
-		//c.restParametersSettings();
 		c.saveEvent();
 		c.goBackButton();
 		c.nextButton();

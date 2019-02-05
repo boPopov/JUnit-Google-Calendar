@@ -6,11 +6,6 @@ public class DAOCalendar{
 		this.calendarService = service; 
 	}
 
-	/*@Override
-	public void addCalendar(String emailCalendar) throws InterruptedException {
-		calendarService.addCalendar(emailCalendar);
-	}*/
-
 	public int returnNumberOfCalendars() {
 		return calendarService.getNumberOfCalendarsMyCalendars();
 	}

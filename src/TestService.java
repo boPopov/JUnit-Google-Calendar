@@ -3,24 +3,15 @@ import java.time.LocalDate;
 import java.time.YearMonth;
 import java.time.ZoneId;
 import java.util.Date;
-import java.util.Calendar;
 
 public class TestService {
 	
 	private Date date;
 	private LocalDate localDate;
-	private Calendar calendar;
 	
 	public TestService() {
 		date = new Date();
 		localDate = date.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
-		calendar = Calendar.getInstance();
-	}
-	
-	public void returnCurentWeek() {
-//		DayOfWeek dayOfWeek = localDate.getDayOfWeek();
-//		int day = date.getDate();
-//		System.out.println("Day: "+day);
 	}
 	
 	private DayOfWeek getDayOfWeek() {
